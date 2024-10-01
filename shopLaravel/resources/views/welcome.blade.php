@@ -43,6 +43,7 @@
                         @endauth
                     @endif
                     </ul>
+                    something
                 </div>
             </div>
         </nav>
