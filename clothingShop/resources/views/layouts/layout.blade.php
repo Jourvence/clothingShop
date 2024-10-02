@@ -15,20 +15,17 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-
     <div id="logo" class="text-center my-3">
         <h1>
-            <a class="nav-link active" href="{{ route('main') }}">Jourvence</a> 
+            <!-- <a class="nav-link active" href="{{ route('main') }}">Jourvence</a>  -->
+            <a href="{{ route('main') }}" class="navbar-brand">
+                <img src="{{ asset('images/clothingSiteLogo.png') }}" alt="Logo" style="width: 100px;"> 
+            </a>
         </h1>
     </div>
     <!-- Navbar Container -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary position-relative">
         <div class="container-fluid">
-            <!-- Left-aligned Image -->
-            <a href="{{ route('main') }}" class="navbar-brand">
-                <img src="{{ asset('images/clothingSiteLogoNoText.png') }}" alt="Logo" style="height: 50px;"> <!-- Replace with your image path -->
-            </a>
-
             <!-- Centered Navigation Links Container -->
             <div class="position-absolute top-50 start-50 translate-middle">
                 <ul class="navbar-nav">
