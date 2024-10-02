@@ -50,17 +50,20 @@
                             @endauth
                         @endif
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Section1</a>    
+                            <a class="nav-link active" href="#">T-shirts</a>    
                         </li>  
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Section2</a>    
+                            <a class="nav-link active" href="#">Trousers</a>    
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Section3</a>    
+                            <a class="nav-link active" href="#">Shoes</a>    
                         </li>  
                     </ul>
                 </div>
             </div>
         </nav>
+        <main class="py-4">
+            @yield('content')
+        </main>
     </body>
 </html>
