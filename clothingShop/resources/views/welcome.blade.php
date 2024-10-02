@@ -15,17 +15,24 @@
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-        <div id="logo">
+        <div id="logo" class="text-center my-3">
             <h1>Jourvence</h1>
         </div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <!-- <a class="navbar-brand" href="#">laravelShop</a> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
+
+        <!-- Navbar Container -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary position-relative">
+            <div class="container-fluid d-flex justify-content-end align-items-center">      
+                <!-- Left: Search Bar (Keep this aligned to the left or right) -->
+                <div class="d-flex">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+
+                <!-- Centered Navigation Links Container -->
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <ul class="navbar-nav">
                         @if (Route::has('login'))
                             @auth
                                 <li class="nav-item">
@@ -35,31 +42,25 @@
                                 <li class="nav-item">
                                     <a class="nav-link active" href="{{ route('login') }}">Login</a>       
                                 </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="{{ route('register') }}">Register</a>    
-                                </li>  
+                                @if (Route::has('register'))
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="{{ route('register') }}">Register</a>    
+                                    </li>  
                                 @endif
                             @endauth
                         @endif
                         <li class="nav-item">
-                            <a class="nav-link active" href="{{ route('register') }}">Section1</a>    
-                         </li>  
-                         <li class="nav-item">
-                            <a class="nav-link active" href="{{ route('register') }}">Section2</a>    
-                         </li>
-                         <li class="nav-item">
-                            <a class="nav-link active" href="{{ route('register') }}">Section3</a>    
-                         </li>  
+                            <a class="nav-link active" href="#">Section1</a>    
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Section2</a>    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Section3</a>    
+                        </li>  
                     </ul>
                 </div>
-                
             </div>
         </nav>
-            <!-- Basically try to copy the H&M site -->
-            <!-- make a search field on the navbar on the right -->
-             <!-- make a navbar dropdown button that redirects you to different views like: t-shirts, trousers, shoes, etc.-->
-
-        
     </body>
 </html>
