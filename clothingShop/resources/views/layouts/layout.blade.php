@@ -16,13 +16,19 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
         <div id="logo" class="text-center my-3">
-            <h1>Jourvence</h1>
+            <h1>
+                <a class="nav-link active" href="{{ route('main') }}">Jourvence</a> 
+            </h1>
         </div>
 
         <!-- Navbar Container -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary position-relative">
             <div class="container-fluid d-flex justify-content-end align-items-center">      
                 <!-- Left: Search Bar (Keep this aligned to the left or right) -->
+                <div class="d-flex">
+                    <img src="" alt="img">
+                </div>
+
                 <div class="d-flex">
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -50,13 +56,13 @@
                             @endauth
                         @endif
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">T-shirts</a>    
+                            <a class="nav-link active" href="{{ route('tShirts') }}">T-shirts</a>   
                         </li>  
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Trousers</a>    
+                            <a class="nav-link active" href="{{ route('trousers') }}">Trousers</a>    
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Shoes</a>    
+                            <a class="nav-link active" href="{{ route('shoes') }}">Shoes</a>   
                         </li>  
                     </ul>
                 </div>
