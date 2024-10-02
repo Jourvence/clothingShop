@@ -25,47 +25,47 @@
     </div>
     <!-- Navbar Container -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary position-relative">
-        <div class="container-fluid">
-            <!-- Centered Navigation Links Container -->
-            <div class="position-absolute top-50 start-50 translate-middle">
-                <ul class="navbar-nav">
-                    @if (Route::has('login'))
-                        @auth
-                            <li class="nav-item">
-                                <a class="nav-link active" href="{{ url('/home') }}">Home</a>          
-                            </li>
-                        @else
-                            <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('login') }}">Login</a>       
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="{{ route('register') }}">Register</a>    
-                                </li>  
-                            @endif
-                        @endauth
-                    @endif
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('tShirts') }}">T-shirts</a>   
-                    </li>  
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('trousers') }}">Trousers</a>    
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('shoes') }}">Shoes</a>   
-                    </li>  
-                </ul>
-            </div>
-
-            <!-- Right-aligned Search Bar -->
-            <div class="d-flex ms-auto">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+    <div class="container-fluid">
+        <!-- Centered Navigation Links Container -->
+        <div class="nav-center position-absolute top-50 start-50 translate-middle d-flex flex-row flex-wrap justify-content-center">
+            <ul class="navbar-nav d-flex flex-row justify-content-center">
+                @if (Route::has('login'))
+                    @auth
+                        <li class="nav-item mx-2"> <!-- Use spacing classes like mx-2 for consistency -->
+                            <a class="nav-link active" href="{{ url('/home') }}">Home</a>          
+                        </li>
+                    @else
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="{{ route('login') }}">Login</a>       
+                        </li>
+                        @if (Route::has('register'))
+                            <li class="nav-item mx-2">
+                                <a class="nav-link active" href="{{ route('register') }}">Register</a>    
+                            </li>  
+                        @endif
+                    @endauth
+                @endif
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" href="{{ route('tShirts') }}">T-shirts</a>   
+                </li>  
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" href="{{ route('trousers') }}">Trousers</a>    
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" href="{{ route('shoes') }}">Shoes</a>   
+                </li>  
+            </ul>
         </div>
-    </nav>
+
+        <!-- Right-aligned Search Bar -->
+        <div class="navbar-right ms-auto d-none d-lg-flex">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
 
     <main class="py-4">
         @yield('content')

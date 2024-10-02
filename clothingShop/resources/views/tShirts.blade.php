@@ -20,19 +20,27 @@
             <div class="row">
                 <div class="col-6">
                     <h6>Item1</h6>
-                    <img src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 1">
+                    <img id="gunFish" src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 1">
                 </div>
                 <div class="col-6">
                     <h6>Item2</h6>
-                    <img src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 2">
+                    <img id="gunFish" src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 2">
                 </div>
                 <div class="col-6">
                     <h6>Item3</h6>
-                    <img src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 3">
+                    <img id="gunFish" src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 3">
                 </div>
                 <div class="col-6">
                     <h6>Item4</h6>
-                    <img src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 4">
+                    <img id="gunFish" src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 4">
+                </div>
+                <div class="col-6">
+                    <h6>Item5</h6>
+                    <img id="gunFish" src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 5">
+                </div>
+                <div class="col-6">
+                    <h6>Item6</h6>
+                    <img id="gunFish" src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 6">
                 </div>
                 <!-- Add more items if needed -->
             </div>
@@ -42,20 +50,28 @@
       
             <div class="row">
                 <div class="col-6">
-                    <h6>Item5</h6>
-                    <img src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 5">
-                </div>
-                <div class="col-6">
-                    <h6>Item6</h6>
-                    <img src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 6">
-                </div>
-                <div class="col-6">
                     <h6>Item7</h6>
-                    <img src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 7">
+                    <img id="gunFish" src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 7">
                 </div>
                 <div class="col-6">
                     <h6>Item8</h6>
-                    <img src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 8">
+                    <img id="gunFish" src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 8">
+                </div>
+                <div class="col-6">
+                    <h6>Item9</h6>
+                    <img id="gunFish" src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 9">
+                </div>
+                <div class="col-6">
+                    <h6>Item10</h6>
+                    <img id="gunFish" src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 10">
+                </div>
+                <div class="col-6">
+                    <h6>Item11</h6>
+                    <img id="gunFish" src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 11">
+                </div>
+                <div class="col-6">
+                    <h6>Item12</h6>
+                    <img id="gunFish" src="{{ asset('images/gunFish.jpg') }}" class="img-fluid mb-3" alt="Item 12">
                 </div>
                 <!-- Add more items if needed -->
             </div>
