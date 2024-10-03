@@ -1,0 +1,38 @@
+html, body{
+    background-color: rgb(255, 255, 255);
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+nav{
+    margin-top: 10px;
+}
+
+#magGlass{
+    width: 35px;
+    border-bottom: 1px solid grey;
+}
+
+#gunFish{
+    width: 300px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+#navSearch{
+    border: none;
+    border-bottom: 1px solid grey;
+    border-radius: 0px;
+    
+    box-shadow: none;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as necessary */
+    .nav-center {
+        justify-content: flex-start !important; /* Align items to the start on small screens */
+    }
+}
