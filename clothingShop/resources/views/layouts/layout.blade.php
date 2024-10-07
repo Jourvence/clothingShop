@@ -34,6 +34,14 @@
                         <li class="nav-item mx-2"> <!-- Use spacing classes like mx-2 for consistency -->
                             <a class="nav-link active" href="{{ url('/home') }}">Home</a>          
                         </li>
+                        <li class="nav-item mx-2">
+                            <form action="{{ url('/logout') }}" method="POST" style="display: inline;">
+                                @csrf <!-- This generates a CSRF token for the form -->
+                                <button type="submit" class="nav-link active" style="border: none; background: none; cursor: pointer;">
+                                    Logout
+                                </button>
+                            </form>
+                        </li>
                     @else
                         <li class="nav-item mx-2">
                             <a class="nav-link active" href="{{ route('login') }}">Login</a>       
@@ -72,3 +80,8 @@
     </main>
 </body>
 </html>
+
+<!-- Add a logged in text that reads your database name and displays it -->
+ 
+    <!-- This one is probably going to be harder -->
+    <!-- make the items display from the database, the "templates" for the items, alongside It's name aka "item 1" etc get read from the database -->
