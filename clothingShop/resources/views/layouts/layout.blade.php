@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     @vite(['resources/css/main.css', 'resources/js/app.js']) <!-- Use the Vite directive -->
 </head>
-<body>
+<body id="colorId">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <div id="logo" class="text-center my-3">
@@ -24,7 +24,7 @@
         </h1>
     </div>
     <!-- Navbar Container -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary position-relative">
+    <nav class="navbar navbar-expand-lg position-relative">
     <div class="container-fluid">
         <!-- Centered Navigation Links Container -->
         <div class="nav-center position-absolute top-50 start-50 translate-middle d-flex flex-row flex-wrap justify-content-center">

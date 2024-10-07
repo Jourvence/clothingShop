@@ -5,11 +5,15 @@ html, body{
 #logo{
     display: flex;
     justify-content: center;
-    margin-top: 35px;
+    background-color: rgb(255, 255, 255);
 }
 
-nav{
-    margin-top: 10px;
+main{
+    background-color: rgb(255, 255, 255);
+}
+
+#colorId{
+    background-color: rgb(255, 255, 255);
 }
 
 #magGlass{
@@ -27,7 +31,7 @@ nav{
     border: none;
     border-bottom: 1px solid grey;
     border-radius: 0px;
-    
+    background-color: white;
     box-shadow: none;
 }
 
@@ -36,3 +40,4 @@ nav{
         justify-content: flex-start !important; /* Align items to the start on small screens */
     }
 }
+

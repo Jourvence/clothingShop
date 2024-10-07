@@ -4,7 +4,7 @@
 <div class="container" id="mainContainer">
     <div class="row">
         <!-- Left Category Menu Column -->
-        <div class="col-md-2 col-sm-12 bg-light p-3">
+        <div class="col-md-2 col-sm-12 p-3">
             <h4>Categories</h4>
             <ul class="list-unstyled">
                 <li><a class="nav-link active" href="{{ route('tShirts') }}">T-shirts</a></li>
