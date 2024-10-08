@@ -31,6 +31,9 @@
             <ul class="navbar-nav d-flex flex-row justify-content-center">
                 @if (Route::has('login'))
                     @auth
+                        <li class="nav-item mx-2">
+                            <a class="nav-link">Logged in as: <span style="color: green;"> {{ Auth::user()->name }}</span></a>
+                        </li>
                         <li class="nav-item mx-2"> <!-- Use spacing classes like mx-2 for consistency -->
                             <a class="nav-link active" href="{{ url('/home') }}">Home</a>          
                         </li>
@@ -81,7 +84,7 @@
 </body>
 </html>
 
-<!-- Add a logged in text that reads your database name and displays it -->
+<!-- Add a logged in text that reads your database name and displays it like .                 You are currently logged in as : Jourvence          and the username should be green-->
  
     <!-- This one is probably going to be harder -->
     <!-- make the items display from the database, the "templates" for the items, alongside It's name aka "item 1" etc get read from the database -->
