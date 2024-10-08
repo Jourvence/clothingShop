@@ -57,7 +57,7 @@
                     @endauth
                 @endif
                 <li class="nav-item mx-2">
-                    <a class="nav-link active" href="{{ route('tShirts') }}">T-shirts</a>   
+                    <a class="nav-link active" href="{{ route('tShirts') }}">T-Shirts</a>   
                 </li>  
                 <li class="nav-item mx-2">
                     <a class="nav-link active" href="{{ route('trousers') }}">Trousers</a>    

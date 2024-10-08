@@ -9,7 +9,7 @@ Route::get('/', function () {
     return view('main');
 })->name('main');
 
-Route::get('/tshirts', function () {
+Route::get('/tShirts', function () {
     return view('tShirts');
 })->name('tShirts');
 
@@ -36,3 +36,11 @@ require __DIR__.'/auth.php';
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// routes/web.php
+
+use App\Http\Controllers\ProductController;
+
+Route::get('/tShirts', [ProductController::class, 'showTShirts'])->name('tShirts');
+
+Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
