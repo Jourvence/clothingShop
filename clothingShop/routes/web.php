@@ -43,4 +43,11 @@ use App\Http\Controllers\ProductController;
 
 Route::get('/tShirts', [ProductController::class, 'showTShirts'])->name('tShirts');
 
+
+
+// Shoes and trousers
+
+Route::get('/trousers', [ProductController::class, 'showTrousers'])->name('trousers');
+Route::get('/shoes', [ProductController::class, 'showShoes'])->name('shoes');
+
 Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');

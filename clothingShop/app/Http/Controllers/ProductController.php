@@ -9,11 +9,26 @@ class ProductController extends Controller
 {
     public function showTShirts()
     {
-        // Retrieve T-shirts from the database
-        $products = Product::where('category_id', 1)->get(); // Change 1 to the correct category ID for T-shirts
+        return $this->showCategory(1, 'tShirts'); // Call the generic method with the T-shirts category ID and view name
+    }
 
-        // Pass the products to the view
-        return view('tShirts', compact('products')); // Make sure 'products' is passed here
+    public function showTrousers()
+    {
+        return $this->showCategory(2, 'trousers'); // Call the generic method with the Trousers category ID and view name
+    }
+
+    public function showShoes()
+    {
+        return $this->showCategory(3, 'shoes'); // Call the generic method with the Shoes category ID and view name
+    }
+
+    public function showCategory($categoryId, $viewName)
+    {
+        // Retrieve products based on the category ID
+        $products = Product::where('category_id', $categoryId)->get();
+
+        // Return the specified view with the products data
+        return view($viewName, ['products' => $products]);
     }
 
     public function show($id)
@@ -25,4 +40,3 @@ class ProductController extends Controller
         return view('products.show', compact('product'));
     }
 }
-

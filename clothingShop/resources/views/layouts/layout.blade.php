@@ -130,3 +130,6 @@
     </main>
 </body>
 </html>
+
+<!-- Quest for today, add a trousers section -->
+ <!-- Make the main section look nice -->
