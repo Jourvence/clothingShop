@@ -44,3 +44,146 @@ main{
 #mainContainerTShirts{
     display: flex;
 }
+
+
+
+
+/* Main Section Styles */
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255); /* Light background to keep focus on content */
+    padding: 60px 0;
+    border-top: 2px solid black; /* Top border for separation */
+    border-bottom: 2px solid black;
+}
+
+.main-section .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-section .hero-image {
+    flex: 1; /* Takes 50% width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section .hero-image img {
+    max-width: 90%;
+    height: auto;
+  
+}
+
+.main-section .content {
+    flex: 1; /* Takes 50% width */
+    padding: 0 40px;
+    text-align: left;
+}
+
+.main-section .title {
+    font-size: 2.5rem;
+    color: black;
+    font-family: 'Courier New', Courier, monospace; /* Vintage font style */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.main-section .description {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.main-section .buttons {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+.main-section .btn {
+    padding: 12px 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.main-section .btn-dark {
+    background: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.main-section .btn-dark:hover {
+    background: white;
+    color: black;
+}
+
+.main-section .btn-outline-dark {
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+.main-section .btn-outline-dark:hover {
+    background: black;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-section .container {
+        flex-direction: column; /* Stack content vertically on small screens */
+        text-align: center;
+    }
+
+    .main-section .hero-image, .main-section .content {
+        flex: 100%;
+    }
+
+    .main-section .hero-image img {
+        width: 100%;
+    }
+
+    .main-section .content {
+        padding: 20px 0;
+    }
+
+    .main-section .title {
+        font-size: 2rem;
+    }
+}
+
+
+.social-section {
+    background-color: #ffffff; /* Light background color */
+    padding: 30px 0; /* Spacing around the section */
+    border-top: 2px solid #e0e0e0; /* Top border for separation */
+}
+
+.social-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Spacing below the title */
+}
+
+.social-links {
+    margin-bottom: 10px; /* Spacing below the links */
+}
+
+.social-link {
+    margin: 0 15px; /* Spacing between links */
+    color: #333; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+}
+
+.social-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
